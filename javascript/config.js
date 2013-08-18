@@ -2,7 +2,7 @@
 //2012.4.13
 //Email:wuchaowu@163.com
 /*----------------------------*****************----------------------------*/
-/*----------------------------*--window config--*----------------------------*/
+/*----------------------------*--基础数据 config--*----------------------------*/
 /*----------------------------*****************----------------------------*/
 var zh_windowCount = 0,
 	zh_winzIndex = 10000,
@@ -108,7 +108,7 @@ var zh_windowCount = 0,
 		{id:'leftIcon1',pos:'left',title:'vbooking团队项目',src:'images/github.jpg',webSrc:'http://vbooking.github.com',iWidth:950,iHeight:660,minWidth:800,minHeight:600},
 		{id:'leftIcon2',pos:'left',title:'携程旅行网',src:'images/ctrip.png',webSrc:'http://ctrip.com/',iWidth:1100,iHeight:500,iLeft:100},
 		{id:'leftIcon4',pos:'left',title:'携程度假',src:'images/c_logo2013.png',webSrc:'http://v.ctrip.com/',iLeft:200,iHeight:500},
-		{id:'leftIcon3',pos:'left',title:'新浪微博',src:'images/sina.png',webSrc:'http://www.weibo.com'},				
+		{id:'leftIcon3',pos:'left',title:'新浪微博',src:'images/sina.png',webSrc:'http://www.weibo.com/u/2000508384?wvr=5'},				
 		{id:'leftIcon6',pos:'left',title:'腾讯微博',src:'images/left6.png',webSrc:'http://dev.t.qq.com/'},
 		{id:'leftIcon5',pos:'left',title:'QQ邮箱',src:'images/left5.png',webSrc:'https://mail.qq.com/cgi-bin/loginpage'}
 	]

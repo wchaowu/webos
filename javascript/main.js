@@ -1389,6 +1389,7 @@ function setBg(oBg){
 		};	
 	}
 }
+
 function fnDrag(obj1,obj2){
 	obj1.onmousedown = function(ev){
 		var ev = ev||event;
