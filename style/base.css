@@ -1,0 +1,112 @@
+/* CSS Document */
+/*2013-4-6*/
+/*Emial: zhou060806@163.com*/
+
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,span,strong,a,img,form,input,textarea,tr,td,th{padding:0;margin:0; background:none}
+table{border-collapse:collapse; border-spacing:0}
+a{text-decoration:none;}
+img{border:0}
+ol,ul,li{list-style:none;}
+em,strong{ font-style:normal; font-weight:normal};
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:bold;}
+
+.clear:after{content:'';display:block;clear:both;}
+.clear{zoom:1;}
+
+/*------------------------left icon css----------------------*/
+
+.leftIcon{ height:60px; width:60px; position:relative; }
+.leftIconImg{height:48px; width:48px;padding:5px;border-radius:4px; cursor:pointer;}
+.leftIconImg img{ height:46px; width:48px;}
+.leftIcon:hover .leftIconImg{padding:4px;border:1px solid #555659; background:#535659;background:rgba(103,104,107,0.8)}
+.iconDelete{ position:absolute;height:20px; width:20px;top:-6px;right:-2px; background: url(../images/closebg.png) no-repeat;cursor:pointer; display:none;}
+
+/*------------------------app css----------------------*/
+
+.app{ width:100px; height:100px;- min-height:90px;-min-width:90px; font-size:12px;text-align:center;left:180px; top:200px; position:absolute; border-radius:5%; cursor:pointer;opacity:0; filter:alpha(opacity:0)}
+.app:hover{background:rgb(200,200,203);background:rgba(130,130,140,0.4);}
+.app .appImg{height:50%; width:50%; margin:10% auto; }
+.app .appImg img{height:100%; width:100%; }
+.app .appTitle{ padding:3% 8%;background:rgba(20,20,20,0.2);border-radius:20px;margin:0 auto;overflow:hidden;color:#fff;text-shadow:1px 1px 2px #666; display:inline-block}
+
+.minIcon{width:60px; height:60px;font-size:10px;text-align:center; padding:5px;left:180px; top:200px; position:absolute; border-radius:5px; cursor:pointer;opacity:0; filter:alpha(opacity:0);}
+.minIcon:hover{background:rgb(200,200,203);background:rgba(130,130,140,0.4);}
+.minIcon .appImg{height:30px; width:30px; margin:6px auto 8px auto; }
+.minIcon .appImg img{height:30px; width:30px; }
+.minIcon .appTitle{ text-align:center;background:rgba(20,20,20,0.2); display:inline-block; max-height:14px;max-width:60px; overflow:hidden;border-radius:10px; padding:1px 4px; margin:auto;overflow:hidden; color:#fff; text-shadow:1px 1px 2px #666}
+
+/*-------------------------window css------------------------*/
+
+.newWindow{ position:absolute; top:31px;left:300px;height:450px;width:960px;z-index:10000;opacity:0;}
+.newWindow,.windowMenu{box-shadow:1px 1px 5px #333;-moz-box-shadow:1px 1px 5px #333;-webkit-box-shadow:1px 1px 5px #333; }
+.windowContainer,.contentFrame,.contentMask,.windowContent,.windowMenuContent,.windowMenu{position:absolute;width:100%; height:100%; top:0; left:0;border: none;}
+.windowContainer{padding:1px}
+.windowMenu{height:30px;top:-31px; cursor:default;background:#eee;background:rgba(240,230,240,0.9);border-radius:4px 4px 0 0; border-bottom:1px solid rgb(220,220,220)}
+.windowMenuactive{background:rgba(130,194,255,0.9);border-bottom:1px solid rgb(180,190,245)}
+.windowMenuactive .windowMenuContent{color:#333;text-shadow:0px 0px 1px #aaa}
+.windowMenuContent{height:30px;text-align:center; font-size:20px; font-weight:bold; font-family:Arial;line-height:30px; color:#aaa;}
+.windowContent{background:#fff; overflow:hidden;}
+.contentFrame{overflow:auto; }
+.contentMask{ z-index:4;display:none; background:#fff; opacity:0; filter:alpha(opacity = 0);}
+.windowControl{ position:absolute;top:0;right:0;width:90px; height:30px; }
+.windowClose,.windowMinimize,.windowMaximize,.windowMax{width:30px; height:30px;float:left;background:url(../images/winddowControl.png); background-repeat:no-repeat}
+.windowMinimize{ background-position:left 0px;}
+.windowMaximize{ background-position:left -30px;}
+.windowMax{background-position:left -60px;}
+.windowClose{ background-position:left -90px;}
+.windowMinimize:hover{ background-position:left -120px;}
+.windowMaximize:hover{ background-position:left -149px;}
+.windowMax:hover{background-position:left -181px;}
+.windowClose:hover{ background-position: left -208px;}
+
+.windowTopResize,.windowBottomResize,.windowRightResize,.windowLeftResize,.windowTlResize,.windowTrResize,.windowBrResize,.windowBlResize{ position:absolute; background:url(../images/resize.png) repeat;z-index:10}
+.windowTopResize,.windowBottomResize{width:100%; cursor:n-resize; height:5px;}
+.windowRightResize,.windowLeftResize{ height:100%; cursor:e-resize; width:5px;}
+.windowRightResize,.windowLeftResize{top:0}
+.windowTopResize,.windowTlResize,.windowTrResize{top:-31px}
+.windowTopResize,.windowBottomResize,.windowLeftResize,.windowTlResize,.windowBlResize{left:0; }
+.windowRightResize,.windowBrResize,.windowTrResize{ right:0; }
+.windowBottomResize,.windowBrResize,.windowBlResize{ bottom:0; }
+.windowTlResize,.windowTrResize,.windowBrResize,.windowBlResize{ height:8px; width:8px;}
+.windowTlResize{cursor:nw-resize;}
+.windowTrResize{cursor:ne-resize;}
+.windowBrResize{cursor:nw-resize;background:url(../images/conner.png) 8px 8px }
+.windowBlResize{cursor:ne-resize;background:url(../images/conner.png) 0 8px}
+
+/*---------------------------------task----------------------------------------*/
+
+.taskMenu{ width:0px;height:40px; float:left;overflow:hidden;left:0;filter:alpha(opacity=0);opacity:0; margin:0 0 10px 10px ;display:none; border-radius:2px;box-shadow:0px 0px 3px #666; background:rgba(224,236,255,0.5); position:relative;}
+.taskMenuWrap{ position:absolute; left:0; top:5px; width:100px; height:30px;}
+.taskMenuCon{ width:100px; height:30px; position:absolute; left:0px; top:0;line-height:30px; text-align:center; color:#333; text-overflow:ellipsis;white-space:nowrap;text-shadow:1px 1px 2px #666; font-weight:bold;overflow:hidden; cursor:default;}
+.taskMax,.taskClose{width:40px; height:30px; position:absolute; left:10px; top:45px;background:url(../images/winddowControl.png); background-repeat:no-repeat;}
+.taskMax{background-position: center -60px;}
+.taskClose{ background-position:center -90px; left:50px;}
+.taskMax:hover{background-position:center -181px;}
+.taskClose:hover{background-position: center -208px;}
+/*--------------------------------- menu--------------------------------*/
+
+.menu{ width:110px;background:#fefefe; position:absolute; left:900px; top:200px; border:1px solid #bbb; padding:2px 0 2px 20px; cursor:default; font-size:12px;}
+.menu ul{ top:0; left:0; width:100%; height:100%; border-left:1px solid #ccc}
+.menu ul li{width:102px; height:24px; position:relative;margin-left:-19px;padding:1px 0 1px 23px;line-height:24px;color:#333;text-shadow:0px 0px 1px #ccc}
+.menu ul li:hover{ padding:0px 0px 0px 22px; background:#aaddff;border:1px solid rgb(180,190,220);background:rgba(183,201,244,0.5); border:1px solid rgba(180,190,220,0.7);box-shadow:1px 1px 2px rgba(180,190,220,0.7)}
+.menu ul span{ display:block;width:104px; margin-left:-4px; padding-bottom:1px;margin-top:-1px; padding-left:4px;border-top:1px solid #ccc; border-bottom:1px solid #ccc}
+.menu ul li ul{ display:none;}
+.menu .iconRight li,.menu .iconLeft li,
+.menu .deskRight li,.menu .deskLeft li{width:76px;}
+.menu .iconRight,.menu .iconLeft,
+.menu .deskRight,.menu .deskLeft{background: url(../images/more.png) right 7px no-repeat;}
+
+.menu .iconRight:hover,.menu .iconLeft:hover,
+.menu .deskRight:hover,.menu .deskLeft:hover
+{ background:rgba(183,201,244,0.5) url(../images/more.png) right 6px no-repeat;}
+.menu .iconRight:hover ul,.menu .iconLeft:hover ul,
+.menu .deskRight:hover ul,.menu .deskLeft:hover ul
+{height:130px; width:80px;position:absolute; left:144px;margin-left:-19px;display:block;padding:1px 0 1px 23px;background:#fefefe; padding:2px; padding-left:20px; border:1px solid #bbb}
+.menu .deskRight:hover ul,.menu .deskLeft:hover ul{height:78px; width:80px;}
+.menu .iconLeft:hover ul,.menu .deskLeft:hover ul{left:-86px;}
+.menu .typeChecked{ background: url(../images/checked.png) 8px 9px no-repeat;}
+.menu .typeChecked:hover{ background:rgba(183,201,244,0.5) url(../images/checked.png) 7px 8px no-repeat;}
+.menu .iconCur{ color:#999;}
+.menu .iconCur:hover{ background:none; border:none;border:1px solid rgb(180,190,220);border:1px solid rgba(180,190,220,0);box-shadow:1px 1px 2px rgba(180,190,220,0)}
+
+

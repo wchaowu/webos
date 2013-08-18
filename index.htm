@@ -1,0 +1,119 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="WebOS"/>
+<title>webOS、个人作品</title>
+<link rel="shortcut icon" href="http://0.web.qstatic.com/webqqpic/favicon32.ico?t=20111011001" type="image/x-icon"/>
+
+<link rel="stylesheet" href="style/base.css" type="text/css" />
+<link rel="stylesheet" href="style/index.css" type="text/css" />
+<style>
+div, img, p {padding:0;margin:0;border:0}
+.mask {height:100%;width:100%;position:absolute;left:0;top:0;z-index:100;color:#fff;background:red;}
+.mask img {width:700px;height:248px;position:absolute;left:0;bottom:0;opacity:0;
+filter:alpha(opacity:0);}
+</style>
+<script type="text/javascript" src="javascript/base.js" ></script>
+<script type="text/javascript" src="javascript/config.js" ></script>
+<script type="text/javascript" src="javascript/main.js" ></script>
+<script>
+window.onbeforeunload = function (){
+  //return '你确定要离开Web QQ吗？';  
+};
+window.error = function (){
+
+}
+window.onload = function (){
+  var oSetbg = $('#setbground'),
+    bgImg = $('#deskbg1'),
+    oBg = $('#bgWindow'),
+    aImg = $('<img>',oBg),
+    oMask = $('#mask'), 
+    maskImg = $('<img>',oMask)[0];
+  var img = ['images/bg1.jpg','images/bg2.jpg','images/bg3.jpg','images/bg4.jpg','images/bg5.jpg','images/bg6.jpg'];
+  document.onmousedown = function(ev){
+    return false;     
+  };
+  if(browInfo() == 'IE8'||browInfo() == 'IE7'||browInfo() == 'IE6'){
+    alert('sorry,'+browInfo()); 
+    return ;  
+  }
+  clearInterval(moveTimer);
+  fnMove(oMask,{opacity:0},function (){
+    oMask.style.display = 'none'; 
+  }); 
+  for(var i=0;i<aImg.length;i++){
+    aImg[i].src = img[i]; 
+  }
+  bgImg.src = img[2];
+  oSetbg.onclick = function(){
+    setBg(oBg);
+  };
+  new desk().init();
+};
+</script>
+<script>
+document.write('<div id="mask" class="mask"><img src="images/mask2.png" /><div id="time" class="time"> <p id="hour" class="hour"></p><p id="date" class="date"></p></div></div>');
+</script>
+<script type="text/javascript" src="javascript/mask.js"></script>
+</head>
+
+<body>
+<div id="wrap" class="wrap clear"> 
+  <!--leftbar  begin-->
+  <div id="desk" class="desk">
+    <div id="left" class="left clear">
+      <div id="leftBar" class="leftBar"> </div>
+      <div class="leftSet">
+        <div class="leftbtn1">
+          <div> <a href="javascript:;" title="输入法" class="pingyin"> </a> <a href="javascript:;" title="声音" class="voice"> </a></div>
+        </div>
+        <div  class="leftbtn2">
+          <div> <a href="javascript:;" title="设置" class="setting" id="setting"> </a><a href="javascript:;" title="设置背景" class="setbground" id="setbground"></a></div>
+        </div>
+        <div  class="leftbtn3">
+          <div><a href="javascript:;" title="Q+" class="Qguide" id="Qguide"> </a></div>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------leftbar end----------------------------------->
+     <div id="clock" class="time"></div>
+    <div id="deskContent" class="deskContent clear"></div>
+   
+    
+    
+    <div class="bgwindow" id="bgWindow">
+      <div class="windowMenu" id="bgWindowMenu">
+        <div id="bgclose" class="windowClose"></div>
+      </div>
+      <div class="windowContent">
+        <ul>
+          <li><img  src="images/px.gif" />
+            <p>茫茫野草</p>
+          </li>
+          <li><img  src="images/px.gif" />
+            <p>教师节</p>
+          </li>
+          <li><img  src="images/px.gif" />
+            <p>七夕</p>
+          </li>
+          <li><img  src="images/px.gif" />
+            <p>梦翔天际</p>
+          </li>
+          <li><img  src="images/px.gif" />
+            <p>水梦年华</p>
+          </li>
+          <li><img  src="images/px.gif" />
+            <p>蒲英之梦</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <img src="images/px.gif" height="100%" width="100%" alt="background" id="deskbg1" class="deskbg">
+  <div id="task" class="task"></div>
+</div>
+</body>
+</html>

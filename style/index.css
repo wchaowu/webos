@@ -1,0 +1,72 @@
+/* CSS Document */
+/*2013-4-8*/
+/*Contact Emial: zhou060806@163.com*/
+
+
+html,body{ position:relative; overflow:hidden;}
+/*------------------leftbar css----------------------*/
+.wrap{height:768px;width:1366px;position:relative; z-index:1;}
+.left{width:66px; height:568px;top:50%; margin-top:-300px;position:absolute;border-left:none;  background: rgba(94,99,90,0.8); box-shadow:0px 0px 1px #000;border-radius:0 4px 4px 0; z-index:3}
+.leftBar{ padding:5px 0 0 5px; height:430px;}
+
+
+.leftSet{width:66px; height:118px;}
+.leftSet a{ float:left;display:inline-block; margin-right:10px;overflow:hidden;}
+.leftbtn1,.leftbtn2,.leftbtn3{width:66px; height:30px;border-top:1px solid #666;border-top:1px solid raba(90,90,90,0.9); text-align:center;}
+.leftbtn1 div,.leftbtn2 div,.leftbtn3 div{width:60px;height:30px;border-top:1px solid #808080;padding:6px 0 0 6px;}
+.leftbtn3{ height:55px;}
+.leftbtn1 a{ width:18px; height:18px; overflow:hidden}
+.leftbtn2 a{ width:20px; height:20px; overflow:hidden}
+.pingyin{ background:url(../images/leftl1.png) left -8px no-repeat;}
+.pingyin:hover{background:url(../images/leftl1.png) left -43px no-repeat;}
+.voice{ background:url(../images/leftl1.png) left -123px no-repeat;}
+.voice:hover{background:url(../images/leftl1.png) left -81px no-repeat; }
+.setting{ background:url(../images/leftl2.png) left -8px no-repeat;}
+.setting:hover{ background:url(../images/leftl2.png) left -80px no-repeat;}
+.setbground{ background:url(../images/leftl2.png) left -43px no-repeat}
+.setbground:hover{ background:url(../images/leftl2.png) left -120px no-repeat}
+.Qguide{ margin-left:8px; height:36px; width:36px; background:url(../images/left_Q.png) left top no-repeat}
+.Qguide:hover{ background:url(../images/left_Q.png) left -63px no-repeat}
+
+/*------------------------desk css-----------------*/
+.desk,.deskContent,.deskIcon{ height:100%; width:100%; position:absolute;left:0; top:0;}
+.desk{overflow:hidden}
+.deskContent{overflow:hidden;}
+.deskIcon{ -border:1px solid #aaa}
+
+.mask{height:100%; width:100%; position:absolute; left:0; top:0; z-index:100;background:red;}
+.mask img{ width:700px; height:248px; position:absolute; left:0; bottom:0;opacity:0;filter:alpha(opacity:0)}
+.time{ height:300px; width:600px;position:absolute; left:800px; top:100px; color:#fff; -text-shadow:3px 3px 4px #999}
+-.time .hour{text-shadow:-3px -3px 1px #fff,3px 3px 1px #fff,-3px 3px 1px #fff,3px -3px 1px #fff,0px 3px 1px #fff}
+-.time .date{text-shadow:-2px -2px 1px #fff,2px 2px 1px #fff,-2px 2px 1px #fff,2px -2px 1px #fff,-2px 0px 1px #fff,2px 0px 1px #fff,0px -2px 1px #fff,0px 2px 1px #fff;}
+.time .hour{ font-family: Verdana, Geneva, sans-serif; font-size:120px;}
+.time .date{font-family: Verdana, Geneva, sans-serif; font-size:60px; margin-top:50px;}
+
+-.click{ width:200px; height:200px; position:absolute; left:800px; top:100px; border:1px solid red; z-index:10; background:url(../images/click.png) no-repeat}
+
+
+.bgwindow{ height:400px; width:700px; position:absolute; left:300px; top:150px; display:none;}
+.bgwindow,.bgwindow .windowMenu{box-shadow:1px 1px 3px #999}
+.bgwindow .windowMenu{ background:#4cbdf2;background:rgba(76,189,222,0.8);}
+.bgwindow .windowClose{ position:absolute; right:0;}
+.windowContent li{ float:left;width:180px; height:150px; margin:20px 26px; cursor:pointer}
+.windowContent img{ width:180px; height:150px;box-shadow:1px 1px 2px #aaa}
+.windowContent li p{ text-align:center; font-size:14px; color:#333; text-shadow:1px 1px 2px #999;line-height:30px;}
+.windowContent li:hover p{color:#09C;text-shadow:1px 1px 2px #aaa;}
+.deskbg{ position:absolute; left:0; top:0; height:100%; width:100%; z-index:-1}
+.task{position:absolute; width:1250px; height:80px; margin-left:80px; -border:1px solid red;bottom:10px;left:0px; overflow:hidden; -border:1px solid red; z-index:20;}
+
+
+
+.top{ position:absolute;width:240px; height:24px; left:40%; top:10px; background:rgba(116,136,150,0.8); border-radius:2px; box-shadow:0 0 2px #656b6f; border:1px solid #5e6267}
+.topImg{ position: absolute; height:28px; width:28px;left:6px; bottom:5px; background:url(../images/topimg.jpg) no-repeat; box-shadow:0 0 4px #666; cursor:pointer;} 
+.deskIndex{ height:24px; width:130px;position:absolute; left:40px;border-right:1px solid #596977; font-size:14px; font-family:'黑体';}
+.deskIndex a{ width:20px; height:20px; float:left; margin:2px;color:#333; text-align:center; line-height:20px;color:#fff; border-radius:2px; cursor:pointer} 
+.deskIndex a:hover{ color:#406907; text-shadow:0 0 1px #3c5c11}
+.deskIndex .active{ font-weight:bold; background:#b4f23d; color:#406907}
+.deskIndex .active:hover{font-weight:bold; background:#b4f23d; color:#406907;text-shadow:none;}
+.appView{border-left:1px solid #929da5; width:30px; height:24px; position:absolute; left:171px; cursor:pointer; background:url(../images/search.png) -4px 3px no-repeat}
+.appView:hover{background:url(../images/search.png) -4px -22px no-repeat}
+.tosearch{  width:30px; height:24px; position:absolute; left:211px; cursor:pointer;background:url(../images/search.png) -12px -45px no-repeat}
+.tosearch:hover{background:url(../images/search.png) -12px -68px no-repeat}
+
