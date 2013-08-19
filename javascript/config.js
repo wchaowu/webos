@@ -124,18 +124,19 @@ var zh_windowCount = 0,
 			{id:'icon10',src:'images/13.png',title:'芒果旅游',webSrc:'http://www.mangocity.com/webqq/bookFlight.html'},
 			{id:'icon10',src:'images/9.png',title:'快递查询',webSrc:'http://kuaidi100.com/frame/app/index.html'},
 			{id:'icon10',src:'images/14.png',title:'团购地图',webSrc:'http://web.qq.com/app/tuangoumap/index.html'},
-			{id:'icon5',src:'images/27.png',title:'游戏',webSrc:''},
+			{id:'icon8',src:'images/4.png',title:'豆瓣FM',webSrc:'http://douban.fm/partner/qq_plus',iWidth:550,iHeight:460,minWidth:400,minHeight:200},
 			{id:'icon10',src:'images/add.png',title:'添加',isOpen:'no'}
 		],
 		[
-			{id:'icon1',src:'images/27.png',title:'JS项目',webSrc:'http://vbooking.github.com',iWidth:1000,iHeight:500},
+			{id:'icon1',src:'images/27.png',title:'vbooking项目',webSrc:'http://vbooking.github.com',iWidth:1000,iHeight:500},
 			{id:'icon2',src:'images/jquery.png',title:'jquery',webSrc:'http://www.jquery.com',iWidth:800,iHeight:500},
 			{id:'icon3',src:'images/nodejs.png',title:'nodejs',webSrc:'http://www.nodejs.org/',iHeight:550},
 			{id:'icon4',src:'images/mongodb.png',title:'mongodb',webSrc:'http://www.mongodb.org',iWidth:950,iHeight:660,minWidth:800,minHeight:600},
 			{id:'icon5',src:'images/c_logo2013.png',title:'携程旅行网',webSrc:'http://www.ctrip.com'},
-			{id:'icon6',src:'images/4.png',title:'豆瓣FM',webSrc:'http://douban.fm/partner/qq_plus',iWidth:550,iHeight:460,minWidth:400,minHeight:200},			
-			{id:'icon7',src:'images/27.png',title:'css整站',webSrc:'html/2345/index.html',iHeight:600,iWidth:1200,iLeft:100,iTop:31},
-			
+		
+			{id:'icon6',src:'images/java.jpg',title:'java网站',webSrc:'http://www.java.com/zh_CN/',iHeight:600,iWidth:1200,iLeft:100,iTop:31},	
+			{id:'icon7',src:'images/aspnet.png',title:'asp.net',webSrc:'http://www.asp.net/',iHeight:600,iWidth:1200,iLeft:100,iTop:31},
+					
 			{id:'icon9',src:'images/27.png',title:'说明文档',webSrc:'html/doc/index.html'},
 			{id:'icon10',src:'images/add.png',title:'添加',isOpen:'no'}
 		],
