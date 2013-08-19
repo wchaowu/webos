@@ -27,13 +27,11 @@ html,body{ position:relative; overflow:hidden;}
 .setbground:hover{ background:url(../images/leftl2.png) left -120px no-repeat}
 .Qguide{ margin-left:8px; height:36px; width:36px; background:url(../images/left_Q.png) left top no-repeat}
 .Qguide:hover{ background:url(../images/left_Q.png) left -63px no-repeat}
-
 /*------------------------desk css-----------------*/
 .desk,.deskContent,.deskIcon{ height:100%; width:100%; position:absolute;left:0; top:0;}
 .desk{overflow:hidden}
 .deskContent{overflow:hidden;}
 .deskIcon{ -border:1px solid #aaa}
-
 .mask{height:100%; width:100%; position:absolute; left:0; top:0; z-index:100;background:red;}
 .mask img{ width:700px; height:248px; position:absolute; left:0; bottom:0;opacity:0;filter:alpha(opacity:0)}
 .time{ height:300px; width:600px;position:absolute; left:800px; top:100px; color:#fff; -text-shadow:3px 3px 4px #999}
