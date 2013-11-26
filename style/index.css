@@ -1,9 +1,4 @@
-/* CSS Document */
-/*2013-4-8*/
-/*Contact Emial: zhou060806@163.com*/
-
-
-html,body{ position:relative; overflow:hidden;}
+﻿html,body{ position:relative; overflow:hidden;}
 /*------------------leftbar css----------------------*/
 .wrap{height:768px;width:1366px;position:relative; z-index:1;}
 .left{width:66px; height:568px;top:50%; margin-top:-300px;position:absolute;border-left:none;  background: rgba(94,99,90,0.8); box-shadow:0px 0px 1px #000;border-radius:0 4px 4px 0; z-index:3}
