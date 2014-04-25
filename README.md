@@ -4,8 +4,11 @@
 目前只支持ie版本中只ie9以上的版本，建议用chrome浏览器 或者firefox <br />
 >后期将完善文档
 
-MIT license
+##License
 
+>And of course:
+
+MIT: http://rem.mit-license.org
 
 
 
